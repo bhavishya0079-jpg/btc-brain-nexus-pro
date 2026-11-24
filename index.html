@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0a0e14">
+<title>BTC BRAIN NEXUS</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="login" class="hide">
+  <h1 class="logo">BTC <b>BRAIN</b> NEXUS</h1>
+  <p class="mut">AI market analysis &amp; strategy research. No real orders. No profit guarantee.</p>
+  <div class="card">
+    <div class="row"><label class="mut" style="width:100%">Backend URL<input id="lbase" style="width:100%" placeholder="https://your-backend.example.com/api"></label></div>
+    <div class="row"><input id="luser" placeholder="Username" value="admin" autocomplete="username" style="width:100%"></div>
+    <div class="row"><input id="lpass" type="password" placeholder="Password" autocomplete="current-password" style="width:100%"></div>
+    <button class="p" id="lgo" style="width:100%">Sign in</button>
+    <div id="lerr" class="err hide"></div>
+  </div>
+</div>
+<div id="app" class="hide">
+  <header>
+    <button id="burger" aria-label="Menu">☰</button>
+    <span class="logo">BTC <b>BRAIN</b> NEXUS</span>
+    <div id="provs"></div>
+    <span class="spacer"></span>
+    <button id="notif" title="Browser notifications">🔔 <span id="unseen">0</span></button>
+    <button id="logout">Logout</button>
+  </header>
+  <nav id="nav"></nav>
+  <main id="main"></main>
+</div>
+<script src="js/config.js"></script>
+<script src="js/chart.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
